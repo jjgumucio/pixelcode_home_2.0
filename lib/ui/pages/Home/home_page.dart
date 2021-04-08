@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pixelcode/app/theme_constants.dart';
 
+import 'hero_section.dart';
 import 'section.dart';
 
 class HomePage extends StatelessWidget {
@@ -114,9 +115,24 @@ class HomePage extends StatelessWidget {
               callToActionBody: "No perdemos nada...",
               inverted: true,
             ),
+            Divider(
+              color: kPrimaryColor,
+              thickness: 2,
+              indent: 100,
+              endIndent: 100,
+            ),
+            SizedBox(
+              height: 80,
+            ),
+            HeroSection(),
+            SizedBox(
+              height: 100,
+            ),
           ],
         ),
       ),
     );
   }
 }
+
+

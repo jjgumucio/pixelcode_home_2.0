@@ -3,7 +3,10 @@ import 'package:get/get.dart';
 import 'package:pixelcode/app/theme_constants.dart';
 import 'package:responsive_framework/responsive_wrapper.dart';
 
+import 'ui/pages/Experience/experience_page.dart';
 import 'ui/pages/Home/home_page.dart';
+import 'ui/pages/Services/services_page.dart';
+import 'ui/pages/Team/team_page.dart';
 
 void main() {
   runApp(PixelCode());
@@ -31,6 +34,21 @@ class PixelCode extends StatelessWidget {
         GetPage(
           name: "/",
           page: () => HomePage(),
+        ),
+        GetPage(
+          name: "/services",
+          page: () => ServicesPage(),
+          transition: Transition.downToUp
+        ),
+        GetPage(
+          name: "/experience",
+          page: () => ExperiencePage(),
+          transition: Transition.downToUp
+        ),
+        GetPage(
+          name: "/team",
+          page: () => TeamPage(),
+          transition: Transition.downToUp
         ),
       ],
       title: 'PixelCode - Diseño y Desarrollo',

@@ -95,6 +95,7 @@ class Section extends StatelessWidget {
               imagePath,
             ),
             width: deviceWidth / 2,
+            height: deviceHeight / 2,
             semanticLabel: imageSemanticLabel,
           ),
         ),
